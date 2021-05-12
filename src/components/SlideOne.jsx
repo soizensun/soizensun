@@ -3,13 +3,13 @@ import Styled from 'styled-components'
 
 export default function SlideOne() {
     return (
-        <>
+        <Container>
             <Center>
                 <div>
                     <Topic1>
                         Welcome to my
                     </Topic1>
-                    <Topic1 style={{color: "white", fontSize: "25px"}}>
+                    <Topic1 style={{ fontSize: "25px"}}>
                         interactive resume
                     </Topic1>
                 </div>
@@ -31,7 +31,7 @@ export default function SlideOne() {
                     </Topic3>
                 </div>
             </Center>
-        </>
+        </Container>
     )
 }
 
@@ -44,7 +44,7 @@ const Topic = Styled.div`
 `
 
 const Topic1 = Styled.div`
-    font-size : 19px;
+    font-size : 17px;
     margin-top: -8px;
 `
 
@@ -65,13 +65,16 @@ const Name = Styled.span`
 `
 
 const Center = Styled.div`
-    /* background-color: red; */
-    /* width: 260px;
-    height: 150px; */
-    margin-top: 15%;
-    margin-left: 38%;
+    width: 470px;
+    height: 330px;
     text-align: left;
+    margin: auto;
 
+`
+
+const Container = Styled.div`
+  display: flex;
+  min-height: 100vh;
 `
 
 
