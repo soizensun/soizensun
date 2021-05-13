@@ -44,13 +44,9 @@ export default function SlideTwo() {
                             <AiFillFacebook />
                         </FacebookIcon>                        
                     </a>
-
                 </Contact>
-
+                
             </Center>
-
-
-
         </Container>
     )
 }
