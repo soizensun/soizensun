@@ -95,12 +95,12 @@ const Center = Styled.div`
     /* background-color: red; */
     text-align: left;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
 `
 
 const Container = Styled.div`
-  display: flex;
-  min-height: 100vh;
+    display: flex;
+    min-height: 100vh;
 `
 
 
