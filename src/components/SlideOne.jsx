@@ -10,7 +10,7 @@ export default function SlideOne() {
                         Welcome to my
                     </Topic1>
                     <Topic1 style={{ fontSize: "25px" }}>
-                        interactive resume
+                        interactive soizensun
                     </Topic1>
                 </div>
 
@@ -79,11 +79,13 @@ const Name = Styled.span`
         position: relative;
         letter-spacing: -5px;
         color: rgba(0,0,255,0.5);
+        left: -1px; 
+        top: -1px;
 
         &:after {
             content: "Z E N";
             position: absolute; 
-            left: 5px; 
+            left: 6px; 
             top: 5px;
             width: 170px;
             color: rgba(255,0,0,0.5);   

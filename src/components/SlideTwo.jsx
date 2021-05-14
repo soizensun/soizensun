@@ -1,8 +1,101 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Styled from 'styled-components'
-import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
 export default function SlideTwo() {
+    const [age, setAge] = useState("");
+
+    useEffect(() => {
+        // console.log(new Date());
+        // let dateNow = new Date()
+        // let year = dateNow.getFullYear()
+        // let month = dateNow.getMonth() + 1;
+        // let day = dateNow.getDate();
+        // let hour = dateNow.getHours();
+        // let minutes = dateNow.getMinutes();
+        // let second = dateNow.getSeconds();
+
+        // console.log(year, month, day, hour, minutes, second);
+
+        // let currentYear = year - 1997
+        // if(month >= 10) {
+        //     (day < 15) ? setAge(currentYear - 1) : setAge(currentYear)
+        // }
+        // else {
+        //     setAge(currentYear - 1)
+        // }
+
+        // setMonth(month + 2)
+
+        const dateString = "1997-10-15";
+          const now = new Date();
+  
+          const yearNow = now.getFullYear();
+          const monthNow = now.getMonth();
+          const dateNow = now.getDate();
+  
+          const dob = new Date(dateString);
+  
+          const yearDob = dob.getFullYear();
+          const monthDob = dob.getMonth();
+          const dateDob = dob.getDate();
+  
+          let yearAge = yearNow - yearDob;
+          let monthAge;
+  
+          if (monthNow >= monthDob) {
+              monthAge = monthNow - monthDob;
+          } else {
+              yearAge--;
+              monthAge = 12 + monthNow - monthDob;
+          }
+  
+          let dateAge;
+          if (dateNow >= dateDob) {
+              dateAge = dateNow - dateDob;
+          } else {
+              monthAge--;
+              dateAge = 31 + dateNow - dateDob;
+  
+              if (monthAge < 0) {
+                  monthAge = 11;
+                  yearAge--;
+              }
+          }
+  
+          const age = {
+              years: yearAge,
+              months: monthAge,
+              days: dateAge
+          };
+  
+          const yearString = (age.years > 1) ? " years" : " year";
+          const monthString = (age.months > 1) ? " months" : " month";
+          const dayString = (age.days > 1) ? " days" : " day";
+  
+          let ageString = "";
+  
+          if ((age.years > 0) && (age.months > 0) && (age.days > 0)) {
+              ageString = age.years + yearString + ", " + age.months + monthString + ", and " + age.days + dayString + " old";
+          } else if ((age.years === 0) && (age.months === 0) && (age.days > 0)) {
+              ageString = "Only " + age.days + dayString + " old!";
+          } else if ((age.years > 0) && (age.months === 0) && (age.days === 0)) {
+              ageString = age.years + yearString + " old. Happy Birthday 🍰🎈";
+          } else if ((age.years > 0) && (age.months > 0) && (age.days === 0)) {
+              ageString = age.years + yearString + " and " + age.months + monthString + " old";
+          } else if ((age.years === 0) && (age.months > 0) && (age.days > 0)) {
+              ageString = age.months + monthString + " and " + age.days + dayString + " old";
+          } else if ((age.years > 0) && (age.months === 0) && (age.days > 0)) {
+              ageString = age.years + yearString + " and " + age.days + dayString + " old";
+          } else if ((age.years === 0) && (age.months > 0) && (age.days === 0)) {
+              ageString = age.months + monthString + " old.";
+          } else {
+              ageString = "Oops! Could not calculate age!";
+          }
+  
+          setAge(ageString)
+    }, []);
+
     return (
         <Container>
             <Center>
@@ -16,34 +109,39 @@ export default function SlideTwo() {
                 <br />
 
                 <Topic2>
-                    <Emoji>🙏</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect>.
+                    <Emoji>🙋🏻‍♂️</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect> .
                 </Topic2>
                 <Topic2>
-                    <Emoji>👵</Emoji> I'm <Effect3>23</Effect3> years old.
+                    <Emoji>📐</Emoji> You can call me <Effect4>Zen</Effect4> .
                 </Topic2>
                 <Topic2>
-                    <Emoji>🥓</Emoji> You can call me <Effect4>Zen</Effect4>.
+                    <Emoji>👦🏻</Emoji> I'm <Effect3>{age}</Effect3> .
                 </Topic2>
                 <Topic2>
-                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at KBTG.
+                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at <Effect5>KBTG</Effect5> .
                 </Topic2>
 
                 <Contact>
-                    <a href="https://github.com/soizensun">
-                        <GithubIcon>
+                    <A href="https://github.com/soizensun" target="_blank">
+                        <Icon>
                             <AiFillGithub />
-                        </GithubIcon>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kritpavinchaiwong-868b641aa/">
-                        <LinkinIcon>
+                        </Icon>
+                    </A>
+                    <A href="https://www.linkedin.com/in/kritpavinchaiwong-868b641aa/" target="_blank">
+                        <Icon>
                             <AiFillLinkedin />
-                        </LinkinIcon>
-                    </a>
-                    <a href="https://www.facebook.com/millizen.chaiwong/">
-                        <FacebookIcon>
+                        </Icon>
+                    </A>
+                    <A href="https://www.facebook.com/millizen.chaiwong/" target="_blank">
+                        <Icon>
                             <AiFillFacebook />
-                        </FacebookIcon>                        
-                    </a>
+                        </Icon>                        
+                    </A>
+                    <A href="https://www.instagram.com/soizensun/" target="_blank">
+                        <Icon>
+                            <AiFillInstagram />
+                        </Icon>                        
+                    </A>
                 </Contact>
                 
             </Center>
@@ -75,24 +173,6 @@ const Topic2 = Styled.div`
     color: #f8f8f8;
     margin-top: 10px;
 `
-
-const Effect = Styled.span`
-    & {
-        background: linear-gradient(to right, #052939 0%, #052939 3px, transparent 5px);
-	    background-repeat: repeat-x;
-	    background-size: 100%;
-        color: white;
-        letter-spacing: 2px;
-        padding-left: 10px;
-        text-decoration: none;
-        font-size: 23px;
-    }
-    
-    &:hover {
-        background: linear-gradient(to right, #052939 0%, #052939 5px, transparent );
-    }
-`
-
 const Effect2 = Styled.span`
     letter-spacing: 12px;
     font-size: 55px;
@@ -100,44 +180,86 @@ const Effect2 = Styled.span`
 	color: white;
 	font-weight: 700;
     font-style: italic;
-    text-shadow: 3px 3px 0px #eb452bb3, 
-                  6px 6px 0px #efa032b3,
-                   9px 9px 0px #46b59bb3, 
-                  12px 12px 0px #017e7fb3,
-                  15px 15px 0px #052939b3;
+    text-shadow: 3px 3px 0px #eb452bE6, 
+                  6px 6px 0px #efa032E6,
+                   9px 9px 0px #46b59bE6, 
+                  12px 12px 0px #017e7fE6,
+                  15px 15px 0px #052939E6;
 `
 
-const Effect3 = Styled.span`
+const Effect = Styled.span`
     & {
-        background: linear-gradient(to right, #ff9800 0%, #ff9800 3px, transparent 5px);
+        padding-right: 7px;
+        padding-top: 10px;
+        /* background: linear-gradient(to right, #052939 0%, #052939 3px, transparent 5px); */
+        background: linear-gradient(to top, #052939B3 0%, #052939B3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         padding-left: 10px;
-        text-decoration: none;
         font-size: 23px;
     }
     
     &:hover {
-        background: linear-gradient(to right, #ff9800 0%, #ff9800 5px, transparent );
+        background: linear-gradient(to top, #052939 0%, #052939 5px, transparent );
+    }
+`
+
+const Effect3 = Styled.span`
+    & {
+        padding-right: 7px;
+        padding-top: 10px;
+        /* background: linear-gradient(to right, #ff9800 0%, #ff9800 3px, transparent 5px); */
+        background: linear-gradient(to top, #ff9800B3 0%, #ff9800B3 5px, transparent );
+	    background-repeat: repeat-x;
+	    background-size: 100%;
+        color: white;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        font-size: 23px;
+    }
+    
+    &:hover {
+        background: linear-gradient(to top, #ff9800 0%, #ff9800 5px, transparent );
     }
 `
 
 const Effect4 = Styled.span`
     & {
-        background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px);
+        padding-right: 7px;
+        padding-top: 10px;
+        /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
+        background: linear-gradient(to top, #017e7fB3 0%, #017e7fB3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         padding-left: 10px;
-        text-decoration: none;
         font-size: 23px;
     }
     
     &:hover {
-        background: linear-gradient(to right, #017e7f 0%, #017e7f 5px, transparent );
+        background: linear-gradient(to top, #017e7f 0%, #017e7f 5px, transparent );
+    }
+`
+
+const Effect5 = Styled.span`
+    & {
+        padding-right: 7px;
+        padding-top: 10px;
+        /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
+        background: linear-gradient(to top, #46b59bB3 0%, #46b59bB3 5px, transparent );
+	    background-repeat: repeat-x;
+	    background-size: 100%;
+        color: white;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        font-size: 23px;
+    }
+    
+    &:hover {
+        background: linear-gradient(to top, #46b59b 0%, #46b59b 5px, transparent );
     }
 `
 
@@ -145,29 +267,29 @@ const Emoji = Styled.span`
     margin-right: 15px;
 `
 
-const GithubIcon = Styled.span`
-    font-size: 30px;
-    color: #f8f8f8;
-    margin-right: 10px;
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='55' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🍖</text></svg>"), auto;
-`
-
-const LinkinIcon = Styled.span`
-    font-size: 30px;
-    color: #f8f8f8;
-    margin-right: 10px;
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='55' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🍖</text></svg>"), auto;
-`
-
-const FacebookIcon = Styled.span`
-    font-size: 30px;
-    color: #f8f8f8;
-    margin-right: 10px;
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='55' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🍖</text></svg>"), auto;
+const Icon = Styled.span`
+    &{
+        font-size: 25px;
+        color: #f8f8f8;
+        margin-right: 10px;
+        transition: 0.4s;
+    }
+    &:hover{
+        font-size: 35px;
+        margin-right: 12px;
+    }
 `
 
 const Contact = Styled.div`
+    margin-top: 40px;
     /* background-color: red; */
-    margin-top: 50px;
-    text-align: right;
+    height: 60px;
+    /* text-align: center; */
+    display: flex;
+    align-items: flex-end;
+`
+
+const A = Styled.a`
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='55' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🍭</text></svg>"), auto;
+
 `
