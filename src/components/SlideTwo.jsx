@@ -6,27 +6,6 @@ export default function SlideTwo() {
     const [age, setAge] = useState("");
 
     useEffect(() => {
-        // console.log(new Date());
-        // let dateNow = new Date()
-        // let year = dateNow.getFullYear()
-        // let month = dateNow.getMonth() + 1;
-        // let day = dateNow.getDate();
-        // let hour = dateNow.getHours();
-        // let minutes = dateNow.getMinutes();
-        // let second = dateNow.getSeconds();
-
-        // console.log(year, month, day, hour, minutes, second);
-
-        // let currentYear = year - 1997
-        // if(month >= 10) {
-        //     (day < 15) ? setAge(currentYear - 1) : setAge(currentYear)
-        // }
-        // else {
-        //     setAge(currentYear - 1)
-        // }
-
-        // setMonth(month + 2)
-
         const dateString = "1997-10-15";
           const now = new Date();
   
@@ -109,16 +88,16 @@ export default function SlideTwo() {
                 <br />
 
                 <Topic2>
-                    <Emoji>🙋🏻‍♂️</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect> .
+                    <Emoji>🙋🏻‍♂️</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect>
                 </Topic2>
                 <Topic2>
-                    <Emoji>📐</Emoji> You can call me <Effect4>Zen</Effect4> .
+                    <Emoji>📐</Emoji> You can call me <Effect4>Zen</Effect4>
                 </Topic2>
                 <Topic2>
-                    <Emoji>👦🏻</Emoji> I'm <Effect3>{age}</Effect3> .
+                    <Emoji>👦🏻</Emoji> I'm <Effect3>{age}</Effect3>
                 </Topic2>
                 <Topic2>
-                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at <Effect5>KBTG</Effect5> .
+                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at <Effect5>KBTG</Effect5>
                 </Topic2>
 
                 <Contact>
@@ -190,9 +169,9 @@ const Effect2 = Styled.span`
 const Effect = Styled.span`
     & {
         padding-right: 7px;
-        padding-top: 10px;
+        padding-bottom: 7px;
         /* background: linear-gradient(to right, #052939 0%, #052939 3px, transparent 5px); */
-        background: linear-gradient(to top, #052939B3 0%, #052939B3 5px, transparent );
+        background: linear-gradient(to bottom, #052939B3 0%, #052939B3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
@@ -202,16 +181,16 @@ const Effect = Styled.span`
     }
     
     &:hover {
-        background: linear-gradient(to top, #052939 0%, #052939 5px, transparent );
+        background: linear-gradient(to bottom, #052939 0%, #052939 5px, transparent );
     }
 `
 
 const Effect3 = Styled.span`
     & {
         padding-right: 7px;
-        padding-top: 10px;
+        padding-bottom: 7px;
         /* background: linear-gradient(to right, #ff9800 0%, #ff9800 3px, transparent 5px); */
-        background: linear-gradient(to top, #ff9800B3 0%, #ff9800B3 5px, transparent );
+        background: linear-gradient(to bottom, #ff9800B3 0%, #ff9800B3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
@@ -221,16 +200,16 @@ const Effect3 = Styled.span`
     }
     
     &:hover {
-        background: linear-gradient(to top, #ff9800 0%, #ff9800 5px, transparent );
+        background: linear-gradient(to bottom, #ff9800 0%, #ff9800 5px, transparent );
     }
 `
 
 const Effect4 = Styled.span`
     & {
         padding-right: 7px;
-        padding-top: 10px;
+        padding-bottom: 7px;
         /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
-        background: linear-gradient(to top, #017e7fB3 0%, #017e7fB3 5px, transparent );
+        background: linear-gradient(to bottom, #017e7fB3 0%, #017e7fB3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
@@ -240,16 +219,16 @@ const Effect4 = Styled.span`
     }
     
     &:hover {
-        background: linear-gradient(to top, #017e7f 0%, #017e7f 5px, transparent );
+        background: linear-gradient(to bottom, #017e7f 0%, #017e7f 5px, transparent );
     }
 `
 
 const Effect5 = Styled.span`
     & {
         padding-right: 7px;
-        padding-top: 10px;
+        padding-bottom: 7px;
         /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
-        background: linear-gradient(to top, #46b59bB3 0%, #46b59bB3 5px, transparent );
+        background: linear-gradient(to bottom, #46b59bB3 0%, #46b59bB3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
@@ -259,7 +238,7 @@ const Effect5 = Styled.span`
     }
     
     &:hover {
-        background: linear-gradient(to top, #46b59b 0%, #46b59b 5px, transparent );
+        background: linear-gradient(to bottom, #46b59b 0%, #46b59b 5px, transparent );
     }
 `
 
