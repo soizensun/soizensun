@@ -47,6 +47,7 @@ const Topic = Styled.div`
 const Topic1 = Styled.div`
     font-size : 17px;
     margin-top: -8px;
+    color: #17202A;
 `
 
 const Topic2 = Styled.div`

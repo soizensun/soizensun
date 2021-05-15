@@ -1,28 +1,54 @@
 import React from 'react'
 import Styled from 'styled-components'
 import StackContainer from './StackContainer'
+import { languages } from '../util/languages';
+import { stacks } from '../util/stack'
+import { mores } from '../util/more'
+import { interest } from '../util/interest'
 
 export default function SlideThree() {
+
+
     return (
-        <Container>
+        <Container2>
             <Center>
-                skill
-                <StackContainer>
-                    
-                </StackContainer>
+                <Container>
+                    <StackContainer renderLogo={languages} content={"Languages"}/>
+                    <StackContainer renderLogo={stacks} content={"Library & Framework"}/>
+                    <StackContainer renderLogo={mores} content={"More"}/>
+                    <StackContainer renderLogo={interest} content={"Interest"}/>
+                </Container>
+                <Topic>
+                    I'm also interested in <u>tech startup</u> and <u>progressive web app</u>. 🍎
+                </Topic>
+                
             </Center>
-            
-        </Container>
+
+
+        </Container2>
+
+
     )
 }
 
 const Center = Styled.div`
-    text-align: left;
     margin: auto;
-    padding: 20px;
+    text-align: center;
 `
 
 const Container = Styled.div`
     display: flex;
+    align-items: center;
+    margin: 30px;
+`
+
+const Container2 = Styled.div`
+    display: flex;
     min-height: 100vh;
 `
+
+const Topic = Styled.div`
+    font-size : 21px;
+    color: #17202A;
+`
+
