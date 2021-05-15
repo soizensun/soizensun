@@ -88,7 +88,7 @@ export default function SlideTwo() {
                 <br />
 
                 <Topic2>
-                    <Emoji>🙋🏻‍♂️</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect>
+                    <Emoji>🙋🏻‍♂</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect>
                 </Topic2>
                 <Topic2>
                     <Emoji>📐</Emoji> You can call me <Effect4>Zen</Effect4>
@@ -157,7 +157,7 @@ const Effect2 = Styled.span`
     font-size: 55px;
 	text-align: center;
 	color: white;
-	font-weight: 700;
+	font-weight: 100;
     font-style: italic;
     text-shadow: 3px 3px 0px #eb452bE6, 
                   6px 6px 0px #efa032E6,
@@ -248,7 +248,7 @@ const Emoji = Styled.span`
 
 const Icon = Styled.span`
     &{
-        font-size: 25px;
+        font-size: 29px;
         color: #f8f8f8;
         margin-right: 10px;
         transition: 0.4s;

@@ -4,22 +4,17 @@
     scroll-snap-align: center;
 }
 
-/* .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-} */
 
 .one {
     background: #FFC83D;
 }
 
 .two {
-    background: #D04762;
+    background: #BF324F;
 }
 
 .three {
-    background: #85C1E9;
+    background: whitesmoke;
 }
 
 .four {
