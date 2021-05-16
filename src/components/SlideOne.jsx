@@ -13,9 +13,9 @@ export default function SlideOne() {
                         interactive soizensun
                     </Topic1>
                 </div>
-
                 <Topic>
-                    I' m <Name>Z E N</Name>
+                    {/* I' m <Name>Z E N</Name> */}
+                    I 'm <Name> M i l l i Z E N</Name>
                 </Topic>
 
                 <div>
@@ -53,6 +53,7 @@ const Topic1 = Styled.div`
 const Topic2 = Styled.div`
     font-size : 24px;
     color: #17202A;
+    
 `
 
 const Topic3 = Styled.span`
@@ -68,11 +69,11 @@ const Name = Styled.span`
         color: rgba(0,0,255,0.5); 
     }
     &:after {
-        content: "Z E N";
+        content: " M i l l i Z E N";
         position: absolute; 
         left: 4px; 
         top: 4px;
-        width: 170px;
+        width: 400px;
         color: rgba(255,0,0,0.5);   
     }
     &:hover {
@@ -84,11 +85,11 @@ const Name = Styled.span`
         top: -1px;
 
         &:after {
-            content: "Z E N";
+            content: " M i l l i Z E N";
             position: absolute; 
             left: 6px; 
             top: 5px;
-            width: 170px;
+            width: 400px;
             color: rgba(255,0,0,0.5);   
         }
     }

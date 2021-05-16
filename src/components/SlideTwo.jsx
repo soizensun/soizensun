@@ -81,11 +81,9 @@ export default function SlideTwo() {
                 <Topic>
                     <Effect2>About me</Effect2>
                 </Topic>
-                <Topic style={{ marginBottom: "30px" }}>
+                <Topic style={{ marginBottom: "85px" }}>
                     & How to contact 🤙🏻
                 </Topic>
-
-                <br />
 
                 <Topic2>
                     <Emoji>🙋🏻‍♂</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect>
@@ -152,6 +150,7 @@ const Topic2 = Styled.div`
     color: #f8f8f8;
     margin-top: 10px;
 `
+
 const Effect2 = Styled.span`
     letter-spacing: 12px;
     font-size: 55px;
@@ -171,7 +170,7 @@ const Effect = Styled.span`
         padding-right: 7px;
         padding-bottom: 7px;
         /* background: linear-gradient(to right, #052939 0%, #052939 3px, transparent 5px); */
-        background: linear-gradient(to bottom, #052939B3 0%, #052939B3 5px, transparent );
+        background: linear-gradient(to bottom, #eb452bE3 0%, #eb452bE3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
@@ -181,7 +180,7 @@ const Effect = Styled.span`
     }
     
     &:hover {
-        background: linear-gradient(to bottom, #052939 0%, #052939 5px, transparent );
+        background: linear-gradient(to bottom, #eb452b 0%, #eb452b 5px, transparent );
     }
 `
 
