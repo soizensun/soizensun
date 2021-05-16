@@ -9,7 +9,7 @@ export default function SlideFour() {
                     Experience
                 </Effect2>
                 <Topic1>
-                    more detail in <A>linkedin</A>
+                    more detail in <A href="https://www.linkedin.com/in/kritpavinchaiwong-868b641aa/" target="_blank">linkedin</A>
 
                 </Topic1>
 
@@ -89,7 +89,8 @@ const Topic1 = Styled.div`
     letter-spacing: 1px;
 `
 
-const A = Styled.span`
+const A = Styled.a`
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='55' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🍭</text></svg>"), auto;
     color: #0B66C3;
+    text-decoration: none;
 `
