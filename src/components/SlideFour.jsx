@@ -1,18 +1,10 @@
 import React from 'react'
 import Styled from 'styled-components'
-import { AiFillLinkedin  } from "react-icons/ai";
 
 export default function SlideFour() {
     return (
         <Container>
             <Center>
-                {/* <Effect2>
-                    Educational
-                </Effect2>
-                <Normal>
-                    &
-                </Normal>
-                <br/> */}
                 <Effect2>
                     Experience
                 </Effect2>
@@ -40,7 +32,7 @@ export default function SlideFour() {
                 </Topic>
                 <Topic>
                     <Emoji>✍🏻</Emoji>
-                    Software engineer Intrenship at <span style={{color: "#6E3BB6"}}>SCB</span> – Siam Commercial Bank<Duration>Jun 2020 - Oct 2020</Duration>
+                    Software engineer Intrenship at <span style={{color: "#6e3bb6"}}>SCB</span> – Siam Commercial Bank<Duration>Jun 2020 - Oct 2020</Duration>
                 </Topic>
             </Center>
 
@@ -52,12 +44,6 @@ const Topic = Styled.div`
     font-size : 21px;
     color: whitesmoke;
     margin-top: 15px;
-`
-
-const Normal = Styled.span`
-    font-size : 34px;
-    color: whitesmoke;
-    margin-left: 45px;
 `
 
 const Center = Styled.div`
