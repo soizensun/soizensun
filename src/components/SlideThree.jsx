@@ -19,6 +19,9 @@ export default function SlideThree() {
                     <StackContainer renderLogo={interest} content={"Interest"}/>
                 </Container>
                 <Topic>
+                    I'm interested in <u>web dev</u> and <u>android dev</u>. 📱
+                </Topic>
+                <Topic>
                     I'm also interested in <u>tech startup</u> and <u>progressive web app</u>. 🍎
                 </Topic>
                 
