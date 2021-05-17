@@ -9,7 +9,7 @@ export default function SlideOne() {
                     <Topic1>
                         Welcome to my
                     </Topic1>
-                    <Topic1 style={{ fontSize: "25px" }}>
+                    <Topic1 style={{ fontSize: "27px" }}>
                         interactive soizensun
                     </Topic1>
                 </div>
@@ -26,7 +26,7 @@ export default function SlideOne() {
                     </Topic2>
                     <br />
                     <br />
-                    <div style={{ fontSize: "23px" }}>
+                    <div style={{ fontSize: "25px" }}>
                         <Topic3>scroll for next</Topic3> 👉
                     </div>
                 </div>
@@ -36,7 +36,7 @@ export default function SlideOne() {
 }
 
 const Topic = Styled.div`
-    font-size : 72px;
+    font-size : 80px;
     text-align: left;
     font-weight: bold;
     margin: 0px;
@@ -44,13 +44,13 @@ const Topic = Styled.div`
 `
 
 const Topic1 = Styled.div`
-    font-size : 17px;
+    font-size : 20px;
     margin-top: -8px;
     color: #17202A;
 `
 
 const Topic2 = Styled.div`
-    font-size : 24px;
+    font-size : 25px;
     color: #17202A;
     
 `
@@ -72,7 +72,7 @@ const Name = Styled.span`
         position: absolute; 
         left: 4px; 
         top: 4px;
-        width: 400px;
+        width: 500px;
         color: rgba(255,0,0,0.5);   
     }
     &:hover {
@@ -88,7 +88,7 @@ const Name = Styled.span`
             position: absolute; 
             left: 6px; 
             top: 5px;
-            width: 400px;
+            width: 500px;
             color: rgba(255,0,0,0.5);   
         }
     }

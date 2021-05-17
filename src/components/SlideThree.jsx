@@ -25,10 +25,7 @@ export default function SlideThree() {
                 <Topic>
                     I'm also interested in <u>tech startup</u> and <u>progressive web app</u>. 🍎
                 </Topic>
-                
             </Center>
-
-
         </Container2>
 
 
@@ -44,6 +41,8 @@ const Container = Styled.div`
     display: flex;
     align-items: center;
     margin: 30px;
+    /* background-color:red; */
+    height: 320px;
 `
 
 const Container2 = Styled.div`

@@ -30,6 +30,12 @@ export const mores = [
         name: "figma"
     },
     {
+        imageUrl: "images/adobeXD.png",
+        height: "45",
+        width: "45",
+        name: "adobeXD"
+    },
+    {
         imageUrl: "images/antd.png",
         height: "45",
         width: "45",
