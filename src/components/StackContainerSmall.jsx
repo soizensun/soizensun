@@ -57,8 +57,3 @@ const Logo = Styled.div`
     }
 
 `
-
-const Header = Styled.div`
-    font-size : 24px;
-    color: #17202A;
-`
