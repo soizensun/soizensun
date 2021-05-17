@@ -10,7 +10,6 @@ export default function SlideFour() {
                 </Header>
                 <Topic1>
                     more detail in <A href="https://www.linkedin.com/in/kritpavinchaiwong-868b641aa/" target="_blank">linkedin</A>
-
                 </Topic1>
 
                 <div style={{ marginBottom: "75px" }}></div>
@@ -38,10 +37,7 @@ export default function SlideFour() {
                     <Emoji>🤴🏻</Emoji>
                     Be a Leader's computer sci student<Duration>2018 - 2021</Duration>
                 </Topic>
-
-
             </Center>
-
         </Container>
     )
 }
@@ -124,7 +120,7 @@ const Header = Styled.span`
 const Topic1 = Styled.div`
     font-size : 29px;
     text-align: left;
-    margin: 0px;
+    margin-top: -8px;
     color: white;
     letter-spacing: 1px;
 `
