@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Styled from 'styled-components'
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
@@ -7,80 +7,78 @@ export default function SlideTwo() {
 
     useEffect(() => {
         const dateString = "1997-10-15";
-          const now = new Date();
-  
-          const yearNow = now.getFullYear();
-          const monthNow = now.getMonth();
-          const dateNow = now.getDate();
-  
-          const dob = new Date(dateString);
-  
-          const yearDob = dob.getFullYear();
-          const monthDob = dob.getMonth();
-          const dateDob = dob.getDate();
-  
-          let yearAge = yearNow - yearDob;
-          let monthAge;
-  
-          if (monthNow >= monthDob) {
-              monthAge = monthNow - monthDob;
-          } else {
-              yearAge--;
-              monthAge = 12 + monthNow - monthDob;
-          }
-  
-          let dateAge;
-          if (dateNow >= dateDob) {
-              dateAge = dateNow - dateDob;
-          } else {
-              monthAge--;
-              dateAge = 31 + dateNow - dateDob;
-  
-              if (monthAge < 0) {
-                  monthAge = 11;
-                  yearAge--;
-              }
-          }
-  
-          const age = {
-              years: yearAge,
-              months: monthAge,
-              days: dateAge
-          };
-  
-          const yearString = (age.years > 1) ? " years" : " year";
-          const monthString = (age.months > 1) ? " months" : " month";
-          const dayString = (age.days > 1) ? " days" : " day";
-  
-          let ageString = "";
-  
-          if ((age.years > 0) && (age.months > 0) && (age.days > 0)) {
-              ageString = age.years + yearString + ", " + age.months + monthString + ", and " + age.days + dayString + " old";
-          } else if ((age.years === 0) && (age.months === 0) && (age.days > 0)) {
-              ageString = "Only " + age.days + dayString + " old!";
-          } else if ((age.years > 0) && (age.months === 0) && (age.days === 0)) {
-              ageString = age.years + yearString + " old. Happy Birthday 🍰🎈";
-          } else if ((age.years > 0) && (age.months > 0) && (age.days === 0)) {
-              ageString = age.years + yearString + " and " + age.months + monthString + " old";
-          } else if ((age.years === 0) && (age.months > 0) && (age.days > 0)) {
-              ageString = age.months + monthString + " and " + age.days + dayString + " old";
-          } else if ((age.years > 0) && (age.months === 0) && (age.days > 0)) {
-              ageString = age.years + yearString + " and " + age.days + dayString + " old";
-          } else if ((age.years === 0) && (age.months > 0) && (age.days === 0)) {
-              ageString = age.months + monthString + " old.";
-          } else {
-              ageString = "Oops! Could not calculate age!";
-          }
-  
-          setAge(ageString)
+        const now = new Date();
+
+        const yearNow = now.getFullYear();
+        const monthNow = now.getMonth();
+        const dateNow = now.getDate();
+
+        const dob = new Date(dateString);
+
+        const yearDob = dob.getFullYear();
+        const monthDob = dob.getMonth();
+        const dateDob = dob.getDate();
+
+        let yearAge = yearNow - yearDob;
+        let monthAge;
+
+        if (monthNow >= monthDob) {
+            monthAge = monthNow - monthDob;
+        } else {
+            yearAge--;
+            monthAge = 12 + monthNow - monthDob;
+        }
+
+        let dateAge;
+        if (dateNow >= dateDob) {
+            dateAge = dateNow - dateDob;
+        } else {
+            monthAge--;
+            dateAge = 31 + dateNow - dateDob;
+
+            if (monthAge < 0) {
+                monthAge = 11;
+                yearAge--;
+            }
+        }
+
+        const age = {
+            years: yearAge,
+            months: monthAge,
+            days: dateAge
+        };
+
+        const yearString = (age.years > 1) ? " years" : " year";
+        const monthString = (age.months > 1) ? " months" : " month";
+        const dayString = (age.days > 1) ? " days" : " day";
+
+        let ageString = "";
+
+        if ((age.years > 0) && (age.months > 0) && (age.days > 0)) {
+            ageString = age.years + yearString + ", " + age.months + monthString + ", and " + age.days + dayString + " old";
+        } else if ((age.years === 0) && (age.months === 0) && (age.days > 0)) {
+            ageString = "Only " + age.days + dayString + " old!";
+        } else if ((age.years > 0) && (age.months === 0) && (age.days === 0)) {
+            ageString = age.years + yearString + " old. Happy Birthday 🍰🎈";
+        } else if ((age.years > 0) && (age.months > 0) && (age.days === 0)) {
+            ageString = age.years + yearString + " and " + age.months + monthString + " old";
+        } else if ((age.years === 0) && (age.months > 0) && (age.days > 0)) {
+            ageString = age.months + monthString + " and " + age.days + dayString + " old";
+        } else if ((age.years > 0) && (age.months === 0) && (age.days > 0)) {
+            ageString = age.years + yearString + " and " + age.days + dayString + " old";
+        } else if ((age.years === 0) && (age.months > 0) && (age.days === 0)) {
+            ageString = age.months + monthString + " old.";
+        } else {
+            ageString = "Oops! Could not calculate age!";
+        }
+
+        setAge(ageString)
     }, []);
 
     return (
         <Container>
             <Center>
-                <Topic>
-                    <Effect2>About me</Effect2>
-                </Topic>
+                <Effect2>About me</Effect2>
                 <Topic style={{ marginBottom: "85px" }}>
                     & How to contact 🤙🏻
                 </Topic>
@@ -89,13 +87,16 @@ export default function SlideTwo() {
                     <Emoji>🙋🏻‍♂</Emoji> My name is <Effect>Kritpavin Chaiwong</Effect>
                 </Topic2>
                 <Topic2>
-                    <Emoji>📐</Emoji> You can call me <Effect4>Zen</Effect4>
+                    <Emoji>📐</Emoji> You can call me Zen
                 </Topic2>
                 <Topic2>
                     <Emoji>👦🏻</Emoji> I'm <Effect3>{age}</Effect3>
                 </Topic2>
                 <Topic2>
-                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at <Effect5>KBTG</Effect5>
+                    <Emoji>👨🏻‍🎓</Emoji> Bachelor's degree <Effect6>computer science</Effect6> Kasetsart 3.11
+                </Topic2>
+                <Topic2>
+                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at KBTG
                 </Topic2>
 
                 <Contact>
@@ -112,15 +113,15 @@ export default function SlideTwo() {
                     <A href="https://www.facebook.com/millizen.chaiwong/" target="_blank">
                         <Icon>
                             <AiFillFacebook />
-                        </Icon>                        
+                        </Icon>
                     </A>
                     <A href="https://www.instagram.com/soizensun/" target="_blank">
                         <Icon>
                             <AiFillInstagram />
-                        </Icon>                        
+                        </Icon>
                     </A>
                 </Contact>
-                
+
             </Center>
         </Container>
     )
@@ -140,7 +141,7 @@ const Container = Styled.div`
 const Topic = Styled.div`
     font-size : 29px;
     text-align: left;
-    margin: 0px;
+    margin-top: -15px;
     color: white;
     letter-spacing: 1px;
 `
@@ -152,30 +153,65 @@ const Topic2 = Styled.div`
 `
 
 const Effect2 = Styled.span`
-    letter-spacing: 12px;
-    font-size: 55px;
-	text-align: center;
-	color: white;
-	font-weight: 100;
-    font-style: italic;
-    text-shadow: 3px 3px 0px #eb452bE6, 
-                  6px 6px 0px #efa032E6,
-                   9px 9px 0px #46b59bE6, 
-                  12px 12px 0px #017e7fE6,
-                  15px 15px 0px #052939E6;
+    &{
+        font-size : 62px;
+        /* text-align: left; */
+        font-weight: bold;
+        display: inline;
+        position: relative;
+        letter-spacing: 2px;
+        color: #EC7063; 
+    }
+    &:after {
+        content: "About me";
+        position: absolute; 
+        left: 4px; 
+        top: 4px;
+        width: 400px;
+        color: #F7F9F980;   
+    }
+    &:hover {
+        display: inline;
+        position: relative;
+        letter-spacing: 2px;
+        color: #EC7063cc;
+        left: -1px; 
+        top: -1px;
+
+        &:after {
+            content: "About me";
+            position: absolute; 
+            left: 5px; 
+            top: 5px;
+            width: 400px;
+            color: #F7F9F98C;   
+        }
+    }
 `
+
+// letter-spacing: 12px;
+// font-size: 55px;
+// text-align: center;
+// color: white;
+// font-weight: 100;
+// font-style: italic;
+// text-shadow: 3px 3px 0px #eb452bE6, 
+//               6px 6px 0px #efa032E6,
+//                9px 9px 0px #46b59bE6, 
+//               12px 12px 0px #017e7fE6,
+//               15px 15px 0px #052939E6;
+
+
 
 const Effect = Styled.span`
     & {
-        padding-right: 7px;
-        padding-bottom: 7px;
-        /* background: linear-gradient(to right, #052939 0%, #052939 3px, transparent 5px); */
+        padding-right: 5px;
         background: linear-gradient(to bottom, #eb452bE3 0%, #eb452bE3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
         letter-spacing: 1px;
-        padding-left: 10px;
+        padding-left: 5px;
         font-size: 23px;
     }
     
@@ -186,58 +222,35 @@ const Effect = Styled.span`
 
 const Effect3 = Styled.span`
     & {
-        padding-right: 7px;
-        padding-bottom: 7px;
-        /* background: linear-gradient(to right, #ff9800 0%, #ff9800 3px, transparent 5px); */
-        background: linear-gradient(to bottom, #ff9800B3 0%, #ff9800B3 5px, transparent );
-	    background-repeat: repeat-x;
-	    background-size: 100%;
-        color: white;
-        letter-spacing: 1px;
-        padding-left: 10px;
-        font-size: 23px;
-    }
-    
-    &:hover {
+        padding-right: 5px;
         background: linear-gradient(to bottom, #ff9800 0%, #ff9800 5px, transparent );
-    }
-`
-
-const Effect4 = Styled.span`
-    & {
-        padding-right: 7px;
-        padding-bottom: 7px;
-        /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
-        background: linear-gradient(to bottom, #017e7fB3 0%, #017e7fB3 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
         letter-spacing: 1px;
-        padding-left: 10px;
+        padding-left: 5px;
         font-size: 23px;
     }
     
     &:hover {
-        background: linear-gradient(to bottom, #017e7f 0%, #017e7f 5px, transparent );
+        background: linear-gradient(to bottom, #ff9800E3 0%, #ff9800E3 5px, transparent );
     }
 `
 
-const Effect5 = Styled.span`
+const Effect6 = Styled.span`
     & {
-        padding-right: 7px;
-        padding-bottom: 7px;
-        /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
-        background: linear-gradient(to bottom, #46b59bB3 0%, #46b59bB3 5px, transparent );
+        padding-right: 5px;
+        background: linear-gradient(to bottom, #FFEB3B 0%, #FFEB3B 5px, transparent );
 	    background-repeat: repeat-x;
 	    background-size: 100%;
         color: white;
         letter-spacing: 1px;
-        padding-left: 10px;
+        padding-left: 5px;
         font-size: 23px;
     }
     
     &:hover {
-        background: linear-gradient(to bottom, #46b59b 0%, #46b59b 5px, transparent );
+        background: linear-gradient(to bottom, #FFEB3BE3 0%, #FFEB3BE3 5px, transparent );
     }
 `
 

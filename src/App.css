@@ -21,10 +21,14 @@
     background: #081E2C;
 }
 
+.five {
+    background: whitesmoke;
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 500vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
