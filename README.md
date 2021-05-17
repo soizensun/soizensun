@@ -1,9 +1,9 @@
-## Hello, Everyone My name is Zen.
+## Hello, Everyone My name is Kritpavin Chaiwong.
 
-- I’m @soizensun Kritpavin Chaiwong. 💻
+- You can call me Zen.
 - I’m interested in Software development. 👨🏼‍💻
 - I’m currently learning ReactJs and Go lang.
-- contact kitpavin@gmail.com or 0845858267
+- contact kitpavin@gmail.com or https://www.linkedin.com/in/kritpavinchaiwong-868b641aa/
 
 <!---
 soizensun/soizensun is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
