@@ -12,6 +12,7 @@ export default function SlideThree() {
     return (
         <Container2>
             <Center>
+                <Effect>Skill</Effect>
                 <Container>
                     <StackContainer renderLogo={languages} content={"Languages"}/>
                     <StackContainer renderLogo={stacks} content={"Library & Framework"}/>
@@ -55,3 +56,39 @@ const Topic = Styled.div`
     color: #17202A;
 `
 
+const Effect = Styled.span`
+    &{
+        font-size : 72px;
+        /* text-align: left; */
+        font-weight: bold;
+        display: inline;
+        position: relative;
+        letter-spacing: 2px;
+        color: rgba(0,0,255,0.5); 
+    }
+    &:after {
+        content: "Skill";
+        position: absolute; 
+        left: 4px; 
+        top: 4px;
+        /* width: 100px; */
+        color: rgba(255,0,0,0.5);   
+    }
+    &:hover {
+        display: inline;
+        position: relative;
+        letter-spacing: 2px;
+        color: rgba(0,0,255,0.5);
+        left: -1px; 
+        top: -1px;
+
+        &:after {
+            content: "Skill";
+            position: absolute; 
+            left: 6px; 
+            top: 5px;
+            /* width: 400px; */
+            color: rgba(255,0,0,0.5);   
+        }
+    }
+`

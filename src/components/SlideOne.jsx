@@ -14,7 +14,6 @@ export default function SlideOne() {
                     </Topic1>
                 </div>
                 <Topic>
-                    {/* I' m <Name>Z E N</Name> */}
                     I 'm <Name> M i l l i Z E N</Name>
                 </Topic>
 

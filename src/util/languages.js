@@ -29,11 +29,10 @@ export const languages = [
         width: "45",
         name: "c"
     },
-
     {
         imageUrl: "images/python.png",
         height: "45",
         width: "45",
         name: "python"
-    }
+    },
 ]
