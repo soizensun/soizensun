@@ -24,20 +24,6 @@ const Container = Styled.div`
     min-height: 100vh;
 `
 
-const Effect2 = Styled.span`
-    letter-spacing: 12px;
-    font-size: 55px;
-	text-align: center;
-	color: white;
-	font-weight: 100;
-    font-style: italic;
-    text-shadow: 3px 3px 0px #eb452bE6, 
-                  6px 6px 0px #efa032E6,
-                   9px 9px 0px #46b59bE6, 
-                  12px 12px 0px #017e7fE6,
-                  15px 15px 0px #052939E6;
-`
-
 const Effect = Styled.span`
     &{
         font-size : 72px;
