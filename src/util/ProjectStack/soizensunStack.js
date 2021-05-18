@@ -13,7 +13,7 @@ export const soizensunStack = [
         name: "vercel"
     },
     {
-        imageUrl: "images/everGreen.png",
+        imageUrl: "images/evergreen.png",
         height: "40",
         width: "40",
         name: "EverGreen"
