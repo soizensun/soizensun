@@ -17,7 +17,7 @@ export default function ProjectContainer(props) {
                 </div>
                 <StackContainerSmall renderLogo={ucarStack} />
                 <div className="github">
-                    <a href="https://github.com/soizensun/productPredict_project" target="_blank">
+                    <a href="https://github.com/soizensun/productPredict_project" target="_blank" rel="noreferrer">
                         Github repository ▶
                     </a>
                 </div>
@@ -29,7 +29,7 @@ export default function ProjectContainer(props) {
                 </div>
                 <StackContainerSmall renderLogo={pplottoStack}/>
                 <div className="github">
-                    <a href="https://github.com/soizensun/pplotto" target="_blank">
+                    <a href="https://github.com/soizensun/pplotto" target="_blank" rel="noreferrer">
                         Github repository ▶
                     </a>
                 </div>
@@ -41,7 +41,7 @@ export default function ProjectContainer(props) {
                 </div>
                 <StackContainerSmall renderLogo={greenPayStack}/>
                 <div className="github">
-                    <a href="https://github.com/soizensun/GreenPay" target="_blank">
+                    <a href="https://github.com/soizensun/GreenPay" target="_blank" rel="noreferrer">
                         Github repository ▶
                     </a>
                 </div>
@@ -53,7 +53,7 @@ export default function ProjectContainer(props) {
                 </div>
                 <StackContainerSmall renderLogo={petTrackStack}/>
                 <div className="github">
-                    <a href="https://github.com/soizensun/pet-track" target="_blank">
+                    <a href="https://github.com/soizensun/pet-track" target="_blank" rel="noreferrer">
                         Github repository ▶
                     </a>
                 </div>
