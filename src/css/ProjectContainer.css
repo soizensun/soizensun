@@ -3,7 +3,7 @@
 }
 
 .card {
-    height: 400px;
+    height: 420px;
     width: 390px;
     background-color: #081E2C;
     border-radius: 8px;
@@ -30,12 +30,12 @@
 
 .title {
     font-size: 22px;
-    color: whitesmoke;
+    color: black;
     font-weight: 300;
-    left: 20px;
     top: 15px;
-    margin-bottom: 45px;
-    /* text-align: left; */
+    background-color: #F5F5F5DB ;
+    padding: 8px;
+    box-shadow: -1rem 0 1rem #00000080;
 }
 
 .card:hover .filledbar {
@@ -66,9 +66,14 @@
 
 a {
     text-decoration: none;
-    /* background-color: tomato; */
     margin: 0px;
     color: #F5F5F580;
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='55' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🍭</text></svg>"), auto;
+}
+
+.tag {
+    color: #F5F5F580;
+    margin-bottom: 22px;
+    margin-top: -15px;
 }
 

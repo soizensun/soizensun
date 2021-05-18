@@ -12,6 +12,7 @@ export default function ProjectContainer(props) {
         <div className="block">
             <div className="card">
                 <h3 className="title"><RiGitRepositoryLine/> Product predict</h3>
+                <div className="tag">Fontend project</div>
                 <div className="content">
                     Android application to predict Eucalyptus's product
                 </div>
@@ -24,8 +25,9 @@ export default function ProjectContainer(props) {
             </div>
             <div className="card">
                 <h3 className="title"><RiGitRepositoryLine/> pplotto</h3>
+                <div className="tag">Fontend project</div>
                 <div className="content">
-                    Website for manage lotto group
+                    Website for manage lotto's group
                 </div>
                 <StackContainerSmall renderLogo={pplottoStack}/>
                 <div className="github">
@@ -36,6 +38,7 @@ export default function ProjectContainer(props) {
             </div>
             <div className="card">
                 <h3 className="title"><RiGitRepositoryLine/> GreenPay</h3>
+                <div className="tag">Full stack project</div>
                 <div className="content">
                     Greenpay E-commerce Application Platform for Social Responsibility 
                 </div>
@@ -48,6 +51,7 @@ export default function ProjectContainer(props) {
             </div>
             <div className="card">
                 <h3 className="title"><RiGitRepositoryLine/> petTrack</h3>
+                <div className="tag">Full stack project</div>
                 <div className="content">
                     Website to manage the pet. Such as food medicine weightใ
                 </div>
