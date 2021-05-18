@@ -8,7 +8,7 @@ export default function SlideFive() {
         <Container>
             <Center>
                 <Effect>
-                    Project
+                    Projects
                 </Effect>
                 <Topic1>
                     more projects in <A href="https://github.com/soizensun" target="_blank"><u>Github</u></A>
@@ -49,7 +49,7 @@ const Effect = Styled.span`
         color: rgba(0,0,255,0.5);
     }
     &:after {
-        content: "Project";
+        content: "Projects";
         position: absolute; 
         left: 4px; 
         top: 4px;
@@ -65,7 +65,7 @@ const Effect = Styled.span`
         top: -1px;
 
         &:after {
-            content: "Project";
+            content: "Projects";
             position: absolute; 
             left: 6px; 
             top: 5px;
