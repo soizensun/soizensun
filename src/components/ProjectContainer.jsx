@@ -6,6 +6,7 @@ import { ucarStack } from '../util/ProjectStack/ucarStack';
 import { pplottoStack } from '../util/ProjectStack/pplottoStack'
 import { greenPayStack } from '../util/ProjectStack/greenPayStack'
 import { petTrackStack } from '../util/ProjectStack/petTrackStack'
+import { soizensunStack } from '../util/ProjectStack/soizensunStack'
 
 export default function ProjectContainer(props) {
     return (
@@ -50,14 +51,27 @@ export default function ProjectContainer(props) {
                 </div>
             </div>
             <div className="card">
-                <h3 className="title"><RiGitRepositoryLine/> petTrack</h3>
+                <h3 className="title"><RiGitRepositoryLine/> PetTrack</h3>
                 <div className="tag">Full stack project</div>
                 <div className="content">
-                    Website to manage the pet. Such as food medicine weightใ
+                    Website to manage the pet. Such as food medicine weight
                 </div>
                 <StackContainerSmall renderLogo={petTrackStack}/>
                 <div className="github">
                     <a href="https://github.com/soizensun/pet-track" target="_blank" rel="noreferrer">
+                        Github repository ▶
+                    </a>
+                </div>
+            </div>
+            <div className="card">
+                <h3 className="title"><RiGitRepositoryLine/> soizensun</h3>
+                <div className="tag">This project</div>
+                <div className="content">
+                    My portfolio website. The website you are exploring now.
+                </div>
+                <StackContainerSmall renderLogo={soizensunStack}/>
+                <div className="github">
+                    <a href="https://github.com/soizensun/soizensun" target="_blank" rel="noreferrer">
                         Github repository ▶
                     </a>
                 </div>
