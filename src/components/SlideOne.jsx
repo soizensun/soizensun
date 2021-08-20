@@ -2,12 +2,6 @@ import React from "react";
 import Styled from "styled-components";
 
 export default function SlideOne() {
-  const setOnClick = () => {
-    console.log("fadf");
-    document
-      .getElementById("target")
-      .scrollIntoView({ block: "end", behavior: "smooth" });
-  };
 
   return (
     <Container>

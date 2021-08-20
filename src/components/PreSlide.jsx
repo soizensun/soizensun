@@ -32,7 +32,7 @@ function useWindowDimensions() {
 }
 
 export default function PreSlide() {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const goToTarget = () => {
     document
       .getElementById("target")
@@ -104,14 +104,6 @@ const Center = Styled.div`
     margin: auto;
     text-align: center;
     color: white;
-`;
-
-const Topic = Styled.div`
-    font-size : 80px;
-    text-align: left;
-    font-weight: bold;
-    margin: 0px;
-    color: #17202A;
 `;
 
 const Effect = Styled.span`
