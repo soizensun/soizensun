@@ -1,6 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
-import ProjectContainer1 from './ProjectContainer1'
+import ProjectContainer2 from './ProjectContainer2'
 
 
 export default function SlideFive() {
@@ -8,13 +8,13 @@ export default function SlideFive() {
         <Container>
             <Center>
                 <Effect>
-                    Projects(1)
+                    Projects(2)
                 </Effect>
                 <Topic1>
                     more projects in <A href="https://github.com/soizensun" target="_blank"><u>Github</u></A>
                 </Topic1>
                 <Container2>
-                    <ProjectContainer1/>
+                    <ProjectContainer2/>
                 </Container2>
             </Center>
         </Container>
@@ -49,7 +49,7 @@ const Effect = Styled.span`
         color: rgba(0,0,255,0.5);
     }
     &:after {
-        content: "Projects(1)";
+        content: "Projects(2)";
         position: absolute; 
         left: 4px; 
         top: 4px;
@@ -65,7 +65,7 @@ const Effect = Styled.span`
         top: -1px;
 
         &:after { 
-            content: "Projects(1)";
+            content: "Projects(2)";
             position: absolute; 
             left: 6px; 
             top: 5px;
