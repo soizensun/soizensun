@@ -8,7 +8,7 @@ import { greenPayStack } from '../util/ProjectStack/greenPayStack'
 import { petTrackStack } from '../util/ProjectStack/petTrackStack'
 import { soizensunStack } from '../util/ProjectStack/soizensunStack'
 
-export default function ProjectContainer(props) {
+export default function ProjectContainer1(props) {
     return (
         <div className="block">
             <div className="card">
@@ -50,7 +50,7 @@ export default function ProjectContainer(props) {
                     </a>
                 </div>
             </div>
-            <div className="card">
+            {/* <div className="card">
                 <h3 className="title"><RiGitRepositoryLine/> PetTrack</h3>
                 <div className="tag">Full stack project</div>
                 <div className="content">
@@ -75,7 +75,7 @@ export default function ProjectContainer(props) {
                         Github repository ▶
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -3,8 +3,8 @@
 }
 
 .card {
-    height: 430px;
-    width: 330px;
+    height: 440px;
+    width: 380px;
     background-color: #081E2C;
     border-radius: 8px;
     box-shadow: -1rem 0 1rem #00000080;
@@ -14,7 +14,7 @@
 }
 
 .card:not(:first-child) {
-    margin-left: -55px;
+    margin-left: -40px;
 }
 
 .card:hover {
