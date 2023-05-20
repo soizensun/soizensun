@@ -2,7 +2,7 @@
 
 - You can call me Zen.
 - I’m interested in Software development. 👩🏻‍💻
-- I’m currently working at Reatspree.
+- I’m currently working at Rentspree.
 - Contact me kitpavin@gmail.com or https://www.linkedin.com/in/kritpavinchaiwong-868b641aa/
 - For more experience https://soizensun.now.sh
 
