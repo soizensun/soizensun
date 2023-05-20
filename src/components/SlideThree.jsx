@@ -12,7 +12,7 @@ export default function SlideThree() {
     return (
         <Container2>
             <Center>
-                <Effect>Skill</Effect>
+                <Effect>Skills</Effect>
                 <Container>
                     <StackContainer renderLogo={languages} content={"Languages"}/>
                     <StackContainer renderLogo={stacks} content={"Library & Framework"}/>

@@ -5,8 +5,6 @@ import StackContainerSmall from './StackContainerSmall'
 import { ucarStack } from '../util/ProjectStack/ucarStack';
 import { pplottoStack } from '../util/ProjectStack/pplottoStack'
 import { greenPayStack } from '../util/ProjectStack/greenPayStack'
-import { petTrackStack } from '../util/ProjectStack/petTrackStack'
-import { soizensunStack } from '../util/ProjectStack/soizensunStack'
 
 export default function ProjectContainer1(props) {
     return (

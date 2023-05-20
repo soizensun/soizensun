@@ -12,9 +12,15 @@ export const stacks = [
         name: "redux"
     },
     {
-        imageUrl: "https://isoonph.me/imgs/skills/nextjs.svg",
+        imageUrl: "images/reduxSaga.png",
         height: "45",
-        width: "80",
+        width: "45",
+        name: "redux saga"
+    },
+    {
+        imageUrl: "images/nextjs.png",
+        height: "45",
+        width: "45",
         name: "Nextjs"
     },
     {
@@ -24,10 +30,10 @@ export const stacks = [
         name: "node js"
     },
     {
-        imageUrl: "https://isoonph.me/imgs/skills/express.svg",
+        imageUrl: "images/nestjs.png",
         height: "45",
-        width: "90",
-        name: "Express js"
+        width: "45",
+        name: "Nest js"
     },
     {
         imageUrl: "images/scss.png",
@@ -48,28 +54,34 @@ export const stacks = [
         name: "Kotlin android"
     },
     {
-        imageUrl: "images/laravel.png",
+        imageUrl: "images/rabbitmq.png",
         height: "45",
         width: "45",
-        name: "laravel"
+        name: "rabbitmq"
     },
     {
-        imageUrl: "images/php.png",
-        height: "45",
-        width: "70",
-        name: "php"
+        imageUrl: "images/androidMan.png",
+        height: "40",
+        width: "50",
+        name: "android"
     },
-    {
-        imageUrl: "images/spring.png",
-        height: "45",
-        width: "45",
-        name: "spring"
-    },
-    {
-        imageUrl: "images/javafx.png",
-        height: "45",
-        width: "100",
-        name: "Java FX"
-    },
+    // {
+    //     imageUrl: "images/php.png",
+    //     height: "45",
+    //     width: "70",
+    //     name: "php"
+    // },
+    // {
+    //     imageUrl: "images/spring.png",
+    //     height: "45",
+    //     width: "45",
+    //     name: "spring"
+    // },
+    // {
+    //     imageUrl: "images/javafx.png",
+    //     height: "45",
+    //     width: "100",
+    //     name: "Java FX"
+    // },
 
 ]

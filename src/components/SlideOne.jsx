@@ -2,20 +2,13 @@ import React from "react";
 import Styled from "styled-components";
 
 export default function SlideOne() {
-  const setOnClick = () => {
-    console.log("fadf");
-    document
-      .getElementById("target")
-      .scrollIntoView({ block: "end", behavior: "smooth" });
-  };
-
   return (
     <Container>
       <Center>
         <p id="target"></p>
         <div>
           <Topic1>Welcome to my</Topic1>
-          <Topic1 style={{ fontSize: "27px" }}>interactive soizensun</Topic1>
+          <Topic1 style={{ fontSize: "27px" }}>interactive resume</Topic1>
         </div>
         <Topic>
           I 'm <Name> M i l l i Z E N</Name>
