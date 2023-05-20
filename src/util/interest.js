@@ -1,11 +1,5 @@
 export const interest = [
     {
-        imageUrl: "images/docker.png",
-        height: "45",
-        width: "55",
-        name: "docker"
-    },
-    {
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
         height: "45",
         width: "55",

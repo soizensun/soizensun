@@ -17,10 +17,10 @@ export const petTrackStack = [
         width: "70",
         name: "mySql"
     },
-    {
-        imageUrl: "https://isoonph.me/imgs/skills/figma.svg",
-        height: "40",
-        width: "40",
-        name: "figma"
-    },
+    // {
+    //     imageUrl: "https://isoonph.me/imgs/skills/figma.svg",
+    //     height: "40",
+    //     width: "40",
+    //     name: "figma"
+    // },
 ]

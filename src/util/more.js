@@ -24,10 +24,16 @@ export const mores = [
         name: "MongoDB"
     },
     {
-        imageUrl: "https://isoonph.me/imgs/skills/figma.svg",
+        imageUrl: "images/docker.png",
+        height: "45",
+        width: "55",
+        name: "docker"
+    },
+    {
+        imageUrl: "images/k8s.png",
         height: "45",
         width: "45",
-        name: "figma"
+        name: "kubernetes"
     },
     {
         imageUrl: "images/adobeXD.png",
@@ -47,29 +53,29 @@ export const mores = [
         width: "45",
         name: "Meterial ui"
     },
-    {
-        imageUrl: "images/semantic.png",
-        height: "45",
-        width: "45",
-        name: "Semantic ui"
-    },
-    {
-        imageUrl: "images/evergreen.png",
-        height: "45",
-        width: "45",
-        name: "Evergreen ui"
-    },
+    // {
+    //     imageUrl: "images/semantic.png",
+    //     height: "45",
+    //     width: "45",
+    //     name: "Semantic ui"
+    // },
+    // {
+    //     imageUrl: "images/evergreen.png",
+    //     height: "45",
+    //     width: "45",
+    //     name: "Evergreen ui"
+    // },
     {
         imageUrl: "images/vercel.png",
         height: "45",
         width: "45",
         name: "vercel"
     },
-    {
-        imageUrl: "images/heroku.png",
-        height: "45",
-        width: "45",
-        name: "heroku"
-    },
+    // {
+    //     imageUrl: "images/heroku.png",
+    //     height: "45",
+    //     width: "45",
+    //     name: "heroku"
+    // },
 
 ]

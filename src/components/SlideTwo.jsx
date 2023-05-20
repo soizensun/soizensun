@@ -96,7 +96,7 @@ export default function SlideTwo() {
                     <Emoji>👨🏻‍🎓</Emoji> Bachelor's degree <Effect6>computer science</Effect6> Kasetsart 3.11
                 </Topic2>
                 <Topic2>
-                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at KBTG
+                    <Emoji>👨🏻‍💻</Emoji> I'm software engineer at <Effect7>RentSpree</Effect7>
                 </Topic2>
 
                 <Contact>
@@ -251,6 +251,25 @@ const Effect6 = Styled.span`
     
     &:hover {
         background: linear-gradient(to bottom, #FFEB3BE3 0%, #FFEB3BE3 5px, transparent );
+    }
+`
+
+const Effect7 = Styled.span`
+    & {
+        padding-right: 5px;
+        /* padding-bottom: 7px; */
+        /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
+        background: linear-gradient(to bottom, #0555FC 0%, #0555FC 5px, transparent );
+	    background-repeat: repeat-x;
+	    background-size: 100%;
+        color: white;
+        letter-spacing: 1px;
+        padding-left: 5px;
+        font-size: 23px;
+    }
+    
+    &:hover {
+        background: linear-gradient(to bottom, #0555FC 0%, #0555FC 5px, transparent );
     }
 `
 
