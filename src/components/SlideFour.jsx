@@ -15,7 +15,11 @@ export default function SlideFour() {
                 <div style={{ marginBottom: "75px" }}></div>
                 <Topic>
                     <Emoji>👨🏻‍💻</Emoji>
-                    Software engineer at <Effect6>KBTG</Effect6> - KASIKORN Business Technology Group<Duration>Jun 2021 - present</Duration>
+                    Current - Software engineer at <Effect7>RentSpree</Effect7> - US Property tech startup<Duration>Mar 2022 - present</Duration>
+                </Topic>
+                <Topic>
+                    <Emoji>👨🏻‍💻</Emoji>
+                    Software engineer at <Effect6>KBTG</Effect6> - KASIKORN Business Technology Group<Duration>Jun 2021 - Mar 2022</Duration>
                 </Topic>
                 <Topic>
                     <Emoji>💻</Emoji>
@@ -205,5 +209,24 @@ const Effect6 = Styled.span`
     
     &:hover {
         background: linear-gradient(to bottom, #00ACD7 0%, #00ACD7 5px, transparent );
+    }
+`
+
+const Effect7 = Styled.span`
+    & {
+        padding-right: 5px;
+        /* padding-bottom: 7px; */
+        /* background: linear-gradient(to right, #017e7f 0%, #017e7f 3px, transparent 5px); */
+        background: linear-gradient(to bottom, #0555FC 0%, #0555FC 5px, transparent );
+	    background-repeat: repeat-x;
+	    background-size: 100%;
+        color: white;
+        letter-spacing: 1px;
+        padding-left: 5px;
+        font-size: 23px;
+    }
+    
+    &:hover {
+        background: linear-gradient(to bottom, #0555FC 0%, #0555FC 5px, transparent );
     }
 `

@@ -42,7 +42,7 @@ export default function PreSlide() {
   return (
     <Container>
       <Center>
-        <Effect>Warning</Effect>
+        <Effect>This's a Kritpavin resume</Effect>
 
         <Topic2>I am lazy to make this website responsiveness.</Topic2>
 
@@ -108,20 +108,20 @@ const Center = Styled.div`
 
 const Effect = Styled.span`
     &{
-        font-size : 72px;
+        font-size : 65px;
         font-weight: bold;
         display: inline;
         position: relative;
         letter-spacing: 3px;
         color: white; 
     }
-    &:after {
-        content: "Warning";
+    /* &:after {
+        content: "This's Kritpavin resume. so,";
         position: absolute; 
         left: 6px; 
         top: 5px;
         color: rgb(231, 76, 60, 0.7);   
-    }
+    } */
 
 `;
 

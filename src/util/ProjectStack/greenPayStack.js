@@ -1,9 +1,9 @@
 export const greenPayStack = [
 
     {
-        imageUrl: "https://isoonph.me/imgs/skills/nextjs.svg",
+        imageUrl: "images/nextjs.png",
         height: "40",
-        width: "75",
+        width: "40",
         name: "Nextjs"
     },
 
@@ -14,9 +14,9 @@ export const greenPayStack = [
         name: "node js"
     },
     {
-        imageUrl: "https://isoonph.me/imgs/skills/express.svg",
-        height: "40",
-        width: "85",
+        imageUrl: "images/express.png",
+        height: "45",
+        width: "65",
         name: "Express js"
     },
     {
