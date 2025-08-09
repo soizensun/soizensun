@@ -3,7 +3,7 @@
 - You can call me Zen.
 - I’m interested in Software development. 👩🏻‍💻
 - Contact me kitpavin@gmail.com or https://www.linkedin.com/in/kritpavinchaiwong-868b641aa/
-- website https://kritpavin.com/
+- website www.kritpavin.com
 
 
 <!---
